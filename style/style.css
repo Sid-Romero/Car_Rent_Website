@@ -143,4 +143,71 @@ html::-webkit-scrollbar-back {
   background: #3DA9FC;
 }
 
+.home-page {
+  background: #FFFFFE;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.home-page::after {
+  content: "";
+  width: 700px;
+  height: 700px;
+  background: #D8EEFE;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  overflow-x: hidden;
+  top: 50px;
+  right: -400px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.home-page .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-page .container .content .head-title {
+  color: #5F5C7B;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.home-page .container .content .head-title span {
+  font-family: inherit;
+  color: #3DA9FC;
+  text-transform: capitalize;
+}
+.home-page .container .content .sub-title {
+  margin: 20px 0 40px;
+  font-size: 18px;
+  color: #5F5C7B;
+  width: 450px;
+}
+.home-page .container .content .download-box .content-box {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  border-radius: 10px;
+  gap: 16px;
+  cursor: pointer;
+}
+.home-page .container .content .download-box .content-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-page .container .content .image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+.home-page .container .content .image-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
